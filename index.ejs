@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to Kenny's Portfolio!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+    <!-- header  -->
+    <div class="container">
+
+      <header id="ha-header" class="shadow header-fullscreen">
+        <div class="header_title">
+          <div class="photo" data-aos="flip-right" data-aos-duration="2000" ><img src="images/icon_pic.png" alt="it's me!"></div>
+          <h1><span style="color: red;">Kenny</span> W. Jiang</h1>
+          <p>Full Stack Web Developer</p>
+        </div>
+
+          <nav>
+            <a href="#">About me</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+          </nav>
+      </header>
+
+      <!-- main body -->
+      <div class="main_container" data-animate-down="header-small" data-animate-up="header-fullscreen">
+        
+        <!-- info container -->
+        <div class="about_me shadow ha-waypoint"   data-aos="fade-in">
+          <div class="name_container">
+            <p>K.</p>
+            <p><span style="color: red">Wenjun</span></p>
+            <p>Jiang</p>
+          </div>
+          <div class="basic_info">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+
+
+        <div class="project_container">
+          <div class="project shadow" data-aos="fade-right">
+            <img src="" alt="Line Up Site Pic">
+            <div class="vid_display">
+              click to appear video player with walk through of the web page.
+            </div>
+            <div class="project_info">
+              <h5>Line Up - An Employee Scheduling App</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+
+          <div class="project shadow" data-aos="fade-left">
+            <img src="" alt="Line Up Site Pic">
+            <div class="vid_display">
+              click to appear video player with walk through of the web page.
+            </div>
+            <div class="project_info">
+              <h5>Line Up - An Employee Scheduling App</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+
+          <div class="project shadow" data-aos="fade-right">
+            <img src="" alt="Line Up Site Pic">
+            <div class="vid_display">
+              click to appear video player with walk through of the web page.
+            </div>
+            <div class="project_info">
+              <h5>fitFriends - Fitness friend finder</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+        <footer>
+            contact me
+            blah blah
+
+        </footer>
+      </div>
+    </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+        AOS.init({
+          offset:200,
+          duration: 1000
+        });
+  </script>
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script>
+    var $head = $( '#ha-header' );
+    $( '.ha-waypoint' ).each( function(i) {
+      var $el = $( this ),
+        animClassDown = $el.data( 'animateDown' ),
+        animClassUp = $el.data( 'animateUp' );
+
+      $el.waypoint( function( direction ) {
+        if( direction === 'down' && animClassDown ) {
+          $head.attr('class', 'ha-header ' + animClassDown);
+        }
+        else if( direction === 'up' && animClassUp ){
+          $head.attr('class', 'ha-header ' + animClassUp);
+        }
+      }, { offset: '100%' } );
+    } );
+  </script>
+  </body>
+</html>

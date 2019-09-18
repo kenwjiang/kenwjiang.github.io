@@ -1,0 +1,73 @@
+$border : 2px solid black;
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Monteserrat', sans-serif;
+}
+.container{
+    width: 100%;
+}
+header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    img{
+        width: 30%;
+    }
+    .header_title{
+        margin: 2%;
+        // .photo{
+        //     width: 50%;
+        // }
+    }
+    nav {
+        width: 50%;
+        a{
+            &::after{
+                margin: 0 1%;
+                content: '/';
+                color: grey;
+            }
+            &:last-child::after{
+                content: '';
+            }
+        }
+    }
+}
+
+.about_me{
+    margin-top: 5%;
+    .name_container{
+        width: 30%;
+        display: inline-block;
+        vertical-align: top;
+        margin: 5% 2%;
+
+        p{ 
+            font-size: 3em;
+            text-align: right;
+        }
+    }
+    .basic_info {
+        margin: 7% 2%;
+        width: 60%;
+        display: inline-block;
+        p{
+            vertical-align: middle;
+            margin: 2%;
+        }
+    }
+}
+
+.project_container{
+    .project {
+        width: 100%;
+        margin: 5% 0;
+        min-height: 350px;
+
+    }
+}
