@@ -6,33 +6,34 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 
   </head>
   <body>
     <!-- header  -->
-    <div class="container">
-
-      <header id="ha-header" class="shadow header-fullscreen">
-        <div class="header_title">
-          <div class="photo" data-aos="flip-right" data-aos-duration="2000" ><img src="images/icon_pic.png" alt="it's me!"></div>
-          <h1><span style="color: red;">Kenny</span> W. Jiang</h1>
-          <p>Full Stack Web Developer</p>
-        </div>
-
-          <nav>
-            <a href="#">About me</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
-          </nav>
-      </header>
+      <div class="navbar">
+        <header id="header" class="shadow full-header">
+            <div class="header_title">
+              <div class="photo" data-aos="flip-right" data-aos-duration="2000"  ><img id="main_pic" src="images/icon_pic.png" alt="it's me!"></div>
+              <h1><span style="color: red;">Kenny</span> W. Jiang</h1>
+              <p>Full Stack Web Developer</p>
+            </div>
+            <div class="icon">
+                <img src="images/icon.png" alt="icon">
+            </div>
+              <nav>
+                <a href="#">About me</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+              </nav>
+          </header>
+      </div>
+    
 
       <!-- main body -->
-      <div class="main_container" data-animate-down="header-small" data-animate-up="header-fullscreen">
-        
+      <div id="body" class="main_container">
         <!-- info container -->
-        <div class="about_me shadow ha-waypoint"   data-aos="fade-in">
+        <div class="about_me shadow"  data-aos="fade-in">
           <div class="name_container">
             <p>K.</p>
             <p><span style="color: red">Wenjun</span></p>
@@ -46,49 +47,62 @@
 
         <div class="project_container">
           <div class="project shadow" data-aos="fade-right">
-            <img src="" alt="Line Up Site Pic">
-            <div class="vid_display">
-              click to appear video player with walk through of the web page.
+            <div class="picture_container shadow-lg">
+                <img src="/images/uChoose.png" class="img-thumbnail" style=" max-height: 200px" alt="uChoose">
             </div>
             <div class="project_info">
-              <h5>Line Up - An Employee Scheduling App</h5>
+              <h5>uChoose</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <button style="float:right;" id="chooseToggle" class="btn btn-primary">Watch Demo</button>
+            </div>
+
+            <div class="video_container" id="chooseVid">
+                <iframe class="video d-inline-block ml-3" width="420" height="345" src="https://www.youtube.com/embed/UtajPl5SCq8">
+                </iframe>
+                <iframe class="video d-inline-block" width="420" height="345" src="https://www.youtube.com/embed/DpHhas97rNg">
+                </iframe>
             </div>
           </div>
 
           <div class="project shadow" data-aos="fade-left">
-            <img src="" alt="Line Up Site Pic">
-            <div class="vid_display">
-              click to appear video player with walk through of the web page.
-            </div>
-            <div class="project_info">
-              <h5>Line Up - An Employee Scheduling App</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div class="project_info" id="lean_right">
+                <h5>Line Up - An Employee Scheduling App</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button id="lineupToggle" class="btn btn-primary">Watch Demo</button>
+              </div>
+              <div class="picture_container">
+                  <img src="images/lineup.png" style="max-width: 200px;" alt="Line Up Site Pic">
+              </div>
+              <div class="video_center" id="lineupVid">
+                  <iframe class="video d-inline-block" width="420" height="345" src="https://www.youtube.com/embed/MLN35LqbdjE">
+                  </iframe>
+              </div>
             </div>
           </div>
 
           <div class="project shadow" data-aos="fade-right">
-            <img src="" alt="Line Up Site Pic">
-            <div class="vid_display">
-              click to appear video player with walk through of the web page.
+            <div class="picture_container">
+                <img src="images/fitFriends.png" style="max-width: 200px" alt="fitFriends">
             </div>
             <div class="project_info">
-              <h5>fitFriends - Fitness friend finder</h5>
+              <h5>fitFriends</h5>
+              <p>Gym buddy finder</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
+          
           </div>
         </div>
-        <footer>
-            contact me
-            blah blah
-
+        <footer class="shadow">
+          <p>hello</p>
         </footer>
-      </div>
     </div>
 
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -98,24 +112,26 @@
           duration: 1000
         });
   </script>
-  <script src="js/modernizr.custom.js"></script>
-  <script src="js/waypoints.min.js"></script>
+  <script src="/js/noframework.waypoints.js"></script>
   <script>
-    var $head = $( '#ha-header' );
-    $( '.ha-waypoint' ).each( function(i) {
-      var $el = $( this ),
-        animClassDown = $el.data( 'animateDown' ),
-        animClassUp = $el.data( 'animateUp' );
+    var waypoint = new Waypoint({
+      element: document.getElementById('body'),
+      handler: (direction)=>{
+        if(direction == 'down') {
+          $('#header').removeClass('full-header').addClass('small-header');
+        } else if (direction == 'up'){
+          $('#header').removeClass('small-header').addClass('full-header');
+        }
+      }, offset: '50%'
+    })
 
-      $el.waypoint( function( direction ) {
-        if( direction === 'down' && animClassDown ) {
-          $head.attr('class', 'ha-header ' + animClassDown);
-        }
-        else if( direction === 'up' && animClassUp ){
-          $head.attr('class', 'ha-header ' + animClassUp);
-        }
-      }, { offset: '100%' } );
-    } );
+    $('#chooseToggle').on('click', ()=>{
+      $('#chooseVid').toggle(300);
+    })
+
+    $('#lineupToggle').on('click', ()=>{
+      $('#lineupVid').toggle(300);
+    })
   </script>
   </body>
 </html>

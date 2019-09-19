@@ -4,12 +4,19 @@
   font-family: 'Monteserrat', sans-serif;
 }
 
-.container {
+body {
   width: 100%;
 }
 
-header {
+.navbar {
   height: 100vh;
+  width: 100%;
+}
+
+.full-header {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,28 +31,123 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
 }
 
-header img {
+.full-header .photo > img {
   width: 30%;
 }
 
-header .header_title {
+.full-header .icon > img {
+  display: none;
+}
+
+.full-header .header_title {
   margin: 2%;
 }
 
-header nav {
+.full-header nav {
   width: 50%;
 }
 
-header nav a::after {
+.full-header nav a::after {
   margin: 0 1%;
   content: '/';
   color: grey;
 }
 
-header nav a:last-child::after {
+.full-header nav a:last-child::after {
   content: '';
+}
+
+.small-header {
+  margin-left: -1%;
+  top: 0;
+  position: fixed;
+  height: 150px;
+  width: 100%;
+  background-color: #fff;
+  opacity: 1;
+  z-index: 1;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.small-header .header_title {
+  position: fixed;
+  display: inline-block;
+  margin: 40px 0 0 120px;
+}
+
+.small-header nav {
+  text-align: right;
+  margin: 95px 3% 0px 3%;
+  float: right;
+  width: 30%;
+  vertical-align: bottom;
+}
+
+.small-header nav a::after {
+  margin: 0 3%;
+  content: '/';
+  color: grey;
+}
+
+.small-header nav a:last-child::after {
+  content: '';
+}
+
+.small-header .photo img {
+  display: none;
+}
+
+.small-header .icon {
+  display: inline-block;
+}
+
+.small-header .icon img {
+  width: 79px;
+  height: 100px;
+  display: inline-block;
+  margin: 15px 0px 0px 420px;
+  position: fixed;
+}
+
+.main_container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.proj {
+  margin: 2%;
+}
+
+.project {
+  width: 100%;
+  margin: 5% 0;
+  min-height: 350px;
+}
+
+.project .picture_container {
+  width: 200px;
+  margin: 5% 4%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.project .picture_container img {
+  margin: 1%;
+}
+
+.project .project_info {
+  width: 60%;
+  margin: 5% 0%;
+  display: inline-block;
+}
+
+#lean_right {
+  margin: 5% 4%;
 }
 
 .about_me {
@@ -75,9 +177,34 @@ header nav a:last-child::after {
   margin: 2%;
 }
 
-.project_container .project {
+.video_container {
+  margin-left: 3%;
   width: 100%;
-  margin: 5% 0;
-  min-height: 350px;
+}
+
+.video_container .video {
+  width: 45%;
+  margin: 2% auto;
+}
+
+.video_center {
+  width: 100%;
+  text-align: center;
+}
+
+.video_center .video {
+  width: 45%;
+  margin: 2% auto;
+}
+
+#chooseVid, #lineupVid {
+  display: none;
+}
+
+footer {
+  height: 150px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
