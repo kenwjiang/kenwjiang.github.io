@@ -31,8 +31,10 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
+  opacity: 1;
+  z-index: 1;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .full-header .photo > img {
@@ -49,6 +51,32 @@ body {
 
 .full-header nav {
   width: 50%;
+}
+
+.full-header nav a {
+  text-decoration: none;
+  position: relative;
+}
+
+.full-header nav a:before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: blue;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.5s cubic-bezier(1, 0.25, 0, 0.25) 0s;
+  transition: all 0.5s cubic-bezier(1, 0.25, 0, 0.25) 0s;
+}
+
+.full-header nav a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .full-header nav a::after {
@@ -86,6 +114,32 @@ body {
   float: right;
   width: 30%;
   vertical-align: bottom;
+}
+
+.small-header nav a {
+  text-decoration: none;
+  position: relative;
+}
+
+.small-header nav a:before {
+  content: "";
+  position: absolute;
+  width: 62%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: blue;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.5s cubic-bezier(1, 0.25, 0, 0.25) 0s;
+  transition: all 0.5s cubic-bezier(1, 0.25, 0, 0.25) 0s;
+}
+
+.small-header nav a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .small-header nav a::after {
@@ -146,8 +200,28 @@ body {
   display: inline-block;
 }
 
-#lean_right {
-  margin: 5% 4%;
+.project .project_info h5 > span {
+  margin-right: 5%;
+}
+
+.project .project_info h5 > a {
+  margin-left: 5%;
+}
+
+.project .tech_container {
+  margin-top: 0;
+}
+
+.project .tech_container p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.project .tech_container img {
+  margin: 0 1%;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
 }
 
 .about_me {
@@ -155,7 +229,7 @@ body {
 }
 
 .about_me .name_container {
-  width: 30%;
+  width: 25%;
   display: inline-block;
   vertical-align: top;
   margin: 5% 2%;
@@ -167,8 +241,8 @@ body {
 }
 
 .about_me .basic_info {
-  margin: 7% 2%;
-  width: 60%;
+  margin: 1% 2%;
+  width: 65%;
   display: inline-block;
 }
 
@@ -201,10 +275,34 @@ body {
   display: none;
 }
 
+#lean_right {
+  margin: 5% 4%;
+}
+
 footer {
-  height: 150px;
+  height: 200px;
   width: 80%;
   margin: 0 auto;
   text-align: center;
+}
+
+footer .footer {
+  margin: 1% 2%;
+}
+
+footer .footer a {
+  margin-right: 1%;
+}
+
+@media screen and (max-width: 1024px) {
+  .middle {
+    margin: 5% 2% !important;
+  }
+}
+
+@media screen and (max_width: 480px) {
+  .construction {
+    margin-top: 3% !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

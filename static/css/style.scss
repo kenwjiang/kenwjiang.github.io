@@ -1,4 +1,4 @@
-
+$thetransition: all .5s cubic-bezier(1,.25,0,.25) 0s;
 
 *{
     margin: 0;
@@ -10,15 +10,12 @@ body{
     width: 100%;
 }
 
+
 .navbar{
     height: 100vh;
     width: 100%;
 }
-// .navbar > header{
-//     margin: 0;
-//     padding: 0;
-//     width: 100%;
-// }
+
 .full-header {
     width: 80%;
     margin: 0 auto;
@@ -28,6 +25,8 @@ body{
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    opacity: 1;
+    z-index: 1;
     .photo > img{
         width: 30%;
     }
@@ -40,6 +39,27 @@ body{
     nav {
         width: 50%;
         a{
+            text-decoration: none;
+            position: relative;
+            &:before {
+            content: "";
+            position: absolute;
+            width: 75%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: blue;
+            visibility: hidden;
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transition: $thetransition;
+            transition: $thetransition;
+            }
+            &:hover:before {
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            }
             &::after{
                 margin: 0 1%;
                 content: '/';
@@ -49,8 +69,9 @@ body{
                 content: '';
             }
         }
+        
     }
-    transition-duration: .5s;
+    transition-duration: 1s;
 }
 
 .small-header {
@@ -75,6 +96,27 @@ body{
         width: 30%;
         vertical-align: bottom;
         a{
+            text-decoration: none;
+            position: relative;
+            &:before {
+            content: "";
+            position: absolute;
+            width: 62%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: blue;
+            visibility: hidden;
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transition: $thetransition;
+            transition: $thetransition;
+            }
+            &:hover:before {
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            }
             &::after{
                 margin: 0 3%;
                 content: '/';
@@ -98,9 +140,6 @@ body{
             position: fixed;
         }
     }
-
-
-
     transition-duration: .5s;
 }
 .main_container{
@@ -128,16 +167,33 @@ body{
         width: 60%;
         margin: 5% 0%;
         display: inline-block;
+        h5 > span{
+            margin-right: 5%;
+        }
+        h5 > a {
+            margin-left: 5%;
+        }
     }
-}
-#lean_right {
-    margin: 5% 4%;
+    .tech_container{
+        margin-top: 0;
+        p{
+            margin: 0;
+            font-weight: bold;
+        }
+        img {
+            margin: 0 1%;
+            height: 50px;
+            width: 50px;
+            display: inline-block;
+        }
+
+    }
 }
 
 .about_me{
     margin-top: 5%;
     .name_container{
-        width: 30%;
+        width: 25%;
         display: inline-block;
         vertical-align: top;
         margin: 5% 2%;
@@ -148,8 +204,8 @@ body{
         }
     }
     .basic_info {
-        margin: 7% 2%;
-        width: 60%;
+        margin: 1% 2%;
+        width: 65%;
         display: inline-block;
         p{
             vertical-align: middle;
@@ -174,13 +230,36 @@ body{
     }
 }
 
+
 #chooseVid, #lineupVid{
     display: none;
 }
 
+#lean_right {
+    margin: 5% 4%;
+}
+
 footer {
-    height: 150px;
+    height: 200px;
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    .footer{
+        margin: 1% 2%;
+        a{
+            margin-right: 1%;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .middle{
+        margin: 5% 2% !important;
+    }
+}
+
+@media screen and (max_width: 480px){
+    .construction {
+        margin-top: 3% !important;
+    }
 }
