@@ -42,6 +42,7 @@ body{
         a{
             text-decoration: none;
             position: relative;
+            color: white;
             &:before {
             content: "";
             position: absolute;
@@ -49,7 +50,7 @@ body{
             height: 2px;
             bottom: 0;
             left: 0;
-            background-color: blue;
+            background-color: white;
             visibility: hidden;
             -webkit-transform: scaleX(0);
             transform: scaleX(0);
@@ -64,7 +65,7 @@ body{
             &::after{
                 margin: 0 1%;
                 content: '/';
-                color: grey;
+                color: white;
             }
             &:last-child::after{
                 content: '';
@@ -97,6 +98,7 @@ body{
         width: 30%;
         vertical-align: bottom;
         a{
+            color:white;
             text-decoration: none;
             position: relative;
             &:before {
@@ -106,7 +108,7 @@ body{
             height: 2px;
             bottom: 0;
             left: 0;
-            background-color: blue;
+            background-color: white;
             visibility: hidden;
             -webkit-transform: scaleX(0);
             transform: scaleX(0);
@@ -121,7 +123,7 @@ body{
             &::after{
                 margin: 0 3%;
                 content: '/';
-                color: grey;
+                color: white;
             }
             &:last-child::after{
                 content: '';

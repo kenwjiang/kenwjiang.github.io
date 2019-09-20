@@ -58,6 +58,7 @@ body {
 .full-header nav a {
   text-decoration: none;
   position: relative;
+  color: white;
 }
 
 .full-header nav a:before {
@@ -67,7 +68,7 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: blue;
+  background-color: white;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -84,7 +85,7 @@ body {
 .full-header nav a::after {
   margin: 0 1%;
   content: '/';
-  color: grey;
+  color: white;
 }
 
 .full-header nav a:last-child::after {
@@ -119,6 +120,7 @@ body {
 }
 
 .small-header nav a {
+  color: white;
   text-decoration: none;
   position: relative;
 }
@@ -130,7 +132,7 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: blue;
+  background-color: white;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -147,7 +149,7 @@ body {
 .small-header nav a::after {
   margin: 0 3%;
   content: '/';
-  color: grey;
+  color: white;
 }
 
 .small-header nav a:last-child::after {
@@ -302,4 +304,19 @@ footer .footer a {
   }
 }
 
+@media screen and (max-width: 768px) {
+  div.tech_container img {
+    width: 40px !important;
+    height: 40px !important;
+    margin: 0 !important;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  div.tech_container img {
+    width: 30px !important;
+    height: 30px !important;
+    margin: 0 !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */
