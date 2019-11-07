@@ -275,7 +275,7 @@ body {
   margin: 2% auto;
 }
 
-#chooseVid, #lineupVid {
+#chooseVid, #lineupVid, #fitFriendsVid {
   display: none;
 }
 
